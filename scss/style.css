@@ -157,4 +157,525 @@ header .navbar .button-h5--flex .button-h5__flex-button:hover {
 #heros .heros-infos .p-infos-hero {
   text-align: center;
   padding-bottom: 60px;
+}
+
+#offers {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#offers .offer--infos__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+#offers .offer--flex__images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 30px;
+}
+@media (max-width: 550px) {
+  #offers .offer--flex__images {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+}
+#offers .offer--flex__images .o--f--bola-flex img {
+  max-width: 400px;
+  width: 100%;
+  padding-top: 30px;
+}
+@media (max-width: 1050px) {
+  #offers .offer--flex__images .o--f--bola-flex {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    padding-top: 20px;
+  }
+}
+
+#tours {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#tours .tours-h1 {
+  text-align: center;
+  padding-bottom: 40px;
+}
+#tours .tour-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 30px;
+}
+@media (max-width: 958px) {
+  #tours .tour-cards {
+    max-width: 900px;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 718px) {
+  #tours .tour-cards {
+    max-width: 600px;
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+#tours .tour-cards .tour-card {
+  max-width: 330px;
+  width: 100%;
+  border: 1px solid rgb(239, 236, 236);
+  padding: 10px;
+  border-radius: 20px;
+}
+@media (max-width: 958px) {
+  #tours .tour-cards .tour-card {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 958px) {
+  #tours .tour-cards .tour-card {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+#tours .tour-cards .tour-card img {
+  max-width: 285px;
+  width: 100%;
+}
+@media (max-width: 958px) {
+  #tours .tour-cards .tour-card img {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+#tours .tour-cards .tour-card h6 {
+  color: rgb(148, 147, 147);
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+#tours .tour-cards .tour-card p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#tours .tour-cards .tour-card h5 {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #adacac;
+}
+#tours .tour-cards .tour-card .display-flex-infos-tour {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+#trending {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#trending .trending-h1 {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+@media (max-width: 900px) {
+  #trending .trending-h1 {
+    font-size: 30px;
+    padding: 10px;
+  }
+}
+#trending .treanding-cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  gap: 30px;
+}
+@media (max-width: 900px) {
+  #trending .treanding-cards {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px;
+  }
+}
+#trending .treanding-cards .treanding-card {
+  margin-left: auto;
+  margin-right: auto;
+}
+#trending .treanding-cards .treanding-card img {
+  max-width: 200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+@media (max-width: 900px) {
+  #trending .treanding-cards .treanding-card img {
+    max-width: 600px;
+  }
+}
+#trending .treanding-cards .treanding-card h3 {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+#trending .treanding-cards .treanding-card p {
+  font-size: 23px;
+}
+
+#deals {
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+#deals .deals-h1 {
+  text-align: center;
+  font-size: 48px;
+  padding-bottom: 40px;
+}
+@media (max-width: 1219px) {
+  #deals .deals-h1 {
+    font-size: 28px;
+  }
+}
+#deals .deals-cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  gap: 30px;
+}
+@media (max-width: 1219px) {
+  #deals .deals-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 30px;
+  }
+}
+@media (max-width: 520px) {
+  #deals .deals-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    gap: 30px;
+  }
+}
+#deals .deals-cards .deals-card {
+  background-color: #FFFFFF;
+  box-shadow: 2px 2px 20px gainsboro;
+  border-radius: 10px;
+}
+@media (max-width: 520px) {
+  #deals .deals-cards .deals-card {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+#deals .deals-cards .deals-card img {
+  border-radius: 10px;
+  max-width: 190px;
+  width: 100%;
+}
+@media (max-width: 520px) {
+  #deals .deals-cards .deals-card img {
+    max-width: 600px;
+  }
+}
+@media (max-width: 412px) {
+  #deals .deals-cards .deals-card img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 1219px) {
+  #deals .deals-cards .deals-card img {
+    max-width: 310px;
+  }
+}
+#deals .deals-cards .deals-card h3 {
+  padding-top: 25px;
+  font-size: 20px;
+  padding-bottom: 5px;
+  text-align: center;
+}
+#deals .deals-cards .deals-card p {
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#plan {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+#plan .plan-ota {
+  background-color: #DDD3EC;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+@media (max-width: 1254px) {
+  #plan .plan-ota {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 1254px) {
+  #plan .plan-ota .infos {
+    text-align: center;
+    align-items: center;
+  }
+}
+#plan .plan-ota .infos h2 {
+  font-size: 40px;
+}
+@media (max-width: 1254px) {
+  #plan .plan-ota .infos h2 {
+    font-size: 30px;
+    align-items: center;
+  }
+}
+#plan .plan-ota .infos p {
+  font-size: 27px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media (max-width: 1254px) {
+  #plan .plan-ota .infos p {
+    font-size: 15px;
+    align-items: center;
+  }
+}
+#plan .plan-ota .infos button {
+  padding: 10px;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+}
+#plan .plan-ota .plan-images {
+  max-width: 530.5px;
+}
+@media (max-width: 1254px) {
+  #plan .plan-ota .plan-images {
+    width: 100%;
+    max-width: 320px;
+    align-items: center;
+  }
+}
+
+#plan1 {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+#plan1 .plan-ota1 {
+  background-color: #F2F1EC;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+@media (max-width: 1254px) {
+  #plan1 .plan-ota1 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 1254px) {
+  #plan1 .plan-ota1 .infos1 {
+    text-align: center;
+    align-items: center;
+  }
+}
+#plan1 .plan-ota1 .infos1 h2 {
+  font-size: 40px;
+}
+@media (max-width: 1254px) {
+  #plan1 .plan-ota1 .infos1 h2 {
+    font-size: 30px;
+    align-items: center;
+  }
+}
+#plan1 .plan-ota1 .infos1 p {
+  font-size: 27px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media (max-width: 1254px) {
+  #plan1 .plan-ota1 .infos1 p {
+    font-size: 15px;
+    align-items: center;
+  }
+}
+#plan1 .plan-ota1 .infos1 button {
+  padding: 10px;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+}
+#plan1 .plan-ota1 .plan-images1 {
+  max-width: 530.5px;
+}
+@media (max-width: 1254px) {
+  #plan1 .plan-ota1 .plan-images1 {
+    width: 100%;
+    max-width: 320px;
+    align-items: center;
+  }
+}
+
+#chose {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+#chose .chose-h1 {
+  text-align: center;
+  font-size: 38px;
+}
+#chose .chose-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 30px;
+  padding-top: 40px;
+}
+@media (max-width: 1260px) {
+  #chose .chose-cards {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+}
+@media (max-width: 608px) {
+  #chose .chose-cards {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+}
+#chose .chose-cards .chose-card {
+  padding-top: 49px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#chose .chose-cards .chose-card img {
+  width: 70px;
+  padding-bottom: 10px;
+}
+#chose .chose-cards .chose-card h4 {
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+#travel {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+#travel .travel-h1 {
+  text-align: center;
+  padding-bottom: 40px;
+}
+#travel .travel-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 20px;
+}
+@media (max-width: 1388px) {
+  #travel .travel-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 30px;
+  }
+}
+@media (max-width: 768px) {
+  #travel .travel-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 30px;
+  }
+}
+@media (max-width: 590px) {
+  #travel .travel-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    gap: 30px;
+  }
+}
+#travel .travel-cards .travel-card {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+@media (max-width: 1388px) {
+  #travel .travel-cards .travel-card img {
+    max-width: 300px;
+    width: 100%;
+  }
+}
+@media (max-width: 590px) {
+  #travel .travel-cards .travel-card img {
+    max-width: 500px;
+  }
+}
+#travel .travel-cards .travel-card p {
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+#travel .travel-cards .travel-card h3 {
+  font-size: 20px;
+}
+
+#footer .container {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: blue;
+  color: white;
+}
+#footer .container .foter-flex1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding-bottom: 90px;
+}
+#footer .container .foter-ota {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+@media (max-width: 860px) {
+  #footer .container .foter-ota {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+#footer .container .foter-ota .foter-bola {
+  padding: 20px;
+}
+#footer .container .foter-ota .foter-bola h3 {
+  padding-bottom: 20px;
+  text-align: center;
+  align-items: center;
+}
+#footer .container .foter-ota .foter-bola p {
+  padding: 20px;
+  font-size: 20px;
+}
+#footer .container .foter-ota .foter-bola button {
+  padding: 10px;
+  background-color: white;
+  border: none;
+  border-radius: 20px;
 }/*# sourceMappingURL=style.css.map */

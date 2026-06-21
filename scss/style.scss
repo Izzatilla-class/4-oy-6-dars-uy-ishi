@@ -5,6 +5,48 @@
     gap: 30px;
 }
 
+@mixin flex1{
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+     gap: 30px;
+}
+
+@mixin flex2{
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+     gap: 30px;
+}
+
+@mixin flex3{
+ display: grid;
+ grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+     gap: 30px;
+}
+
+@mixin flex4{
+ display: grid;
+ grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+     gap: 30px;
+}
+
+@mixin flex5{
+ display: grid;
+ grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+     gap: 30px;
+}
+
+@mixin flex6{
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+     gap: 30px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -158,5 +200,420 @@ border-radius: 50px;
             text-align: center;
             padding-bottom: 60px;
         }
+    }
+}
+
+#offers{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .offer--infos__flex{
+        @include flex();
+    }
+    .offer--flex__images{
+        @include flex1();
+        @media (max-width:550px) {
+      grid-template-columns: repeat(1, 1fr);
+            align-items: center;
+        }
+        .o--f--bola-flex{
+            img{
+                max-width: 400px;
+                width: 100%;
+                padding-top: 30px;
+            }
+                @media (max-width:1050px) {
+ margin-left: auto;
+ margin-right: auto;
+ padding: 10px;
+ padding-top: 20px;
+        }
+        }
+    }
+}
+
+#tours{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .tours-h1{
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .tour-cards{
+        @include flex2();
+        @media (max-width:958px) {
+            max-width: 900px;
+            width: 100%;
+            grid-template-columns: repeat(2, 1fr);
+        }
+                @media (max-width:718px) {
+            max-width: 600px;
+            width: 100%;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .tour-card{
+            max-width: 330px;
+           width: 100%;
+            border: 1px solid rgb(239, 236, 236);
+            padding: 10px;
+            border-radius: 20px;
+                    @media (max-width:958px) {
+    margin-left: auto;
+    margin-right: auto;
+        }
+                 @media (max-width:958px) {
+            max-width: 400px;
+            width: 100%;
+        }
+            img{
+                max-width: 285px;
+                width: 100%;
+                                 @media (max-width:958px) {
+            max-width: 400px;
+            width: 100%;
+        }
+            }
+            h6{
+                color: rgb(148, 147, 147);
+                padding-bottom: 10px;
+                padding-top: 5px;
+            }
+            p{
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            h5{
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #adacac;
+            }
+.display-flex-infos-tour{
+    padding-top: 10px;
+    @include flex();
+}
+        }
+    }
+}
+
+#trending{
+    padding-top: 40px;
+    padding-bottom: 40px;
+   .trending-h1{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+      @media (max-width:900px) {
+font-size: 30px;
+       padding: 10px;
+    }
+   }
+   .treanding-cards{
+    @include flex3();
+    @media (max-width:900px) {
+       grid-template-columns: repeat(1, 1fr);
+       padding: 10px;
+    }
+    .treanding-card{
+        margin-left: auto;
+        margin-right: auto;
+    img{
+        max-width: 200px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+           @media (max-width:900px) {
+   max-width: 600px;
+    }
+    }
+    h3{
+        padding-top: 5px;
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+    p{
+        font-size: 23px;
+    }
+    }
+   }
+}
+
+#deals{
+    padding-top: 50px;
+    padding-bottom: 40px;
+    .deals-h1{
+        text-align: center;
+        font-size: 48px;
+        padding-bottom: 40px;
+        @media (max-width:1219px) {
+            font-size: 28px; 
+        }
+    }
+    .deals-cards{
+        @include flex4();
+        @media (max-width:1219px) {
+            @include flex1();
+        }
+        @media (max-width:520px) {
+            @include flex5();
+        }
+        .deals-card{
+            background-color: #FFFFFF;
+            box-shadow: 2px 2px 20px gainsboro;
+            border-radius: 10px;
+            
+            @media (max-width: 520px) {
+                max-width: 400px;
+margin: 0 auto;
+            }
+
+            img{
+                border-radius: 10px;
+                max-width: 190px;
+                width: 100%;
+                @media (max-width:520px) {
+                    max-width: 600px;
+                }
+                @media (max-width:412px) {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                @media (max-width:1219px) {
+                    max-width: 310px;
+                }
+            }
+            h3{
+                padding-top: 25px;
+                font-size: 20px;
+                padding-bottom: 5px;
+                text-align: center;
+            }
+            p{
+                font-size: 16px;
+                text-align: center;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+#plan{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    .plan-ota{
+        background-color: #DDD3EC;
+        border-radius: 20px;
+        padding: 30px;
+        @include flex();
+        @media (max-width:1254px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        .infos{
+       @media (max-width:1254px) {
+           text-align: center;
+            align-items: center;
+        }
+            h2{
+                font-size: 40px;
+                                   @media (max-width:1254px) {
+           font-size: 30px;
+            align-items: center;
+        }
+            }
+            p{
+                font-size: 27px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                                   @media (max-width:1254px) {
+          font-size: 15px;
+            align-items: center;
+        }
+            }
+            button{
+                padding: 10px;
+                background-color: black;
+                border-radius: 10px;
+                color: white;
+            }
+        }
+        .plan-images {
+            max-width: 530.5px;
+                   @media (max-width:1254px) {
+           width: 100%;
+                    max-width: 320px;
+            align-items: center;
+        }
+        }
+    }
+}
+
+#plan1{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    .plan-ota1{
+        background-color: #F2F1EC;
+        border-radius: 20px;
+        padding: 30px;
+        @include flex();
+        @media (max-width:1254px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        .infos1{
+       @media (max-width:1254px) {
+           text-align: center;
+            align-items: center;
+        }
+            h2{
+                font-size: 40px;
+                                   @media (max-width:1254px) {
+           font-size: 30px;
+            align-items: center;
+        }
+            }
+            p{
+                font-size: 27px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                                   @media (max-width:1254px) {
+          font-size: 15px;
+            align-items: center;
+        }
+            }
+            button{
+                padding: 10px;
+                background-color: black;
+                border-radius: 10px;
+                color: white;
+            }
+        }
+        .plan-images1 {
+            max-width: 530.5px;
+                   @media (max-width:1254px) {
+           width: 100%;
+                    max-width: 320px;
+            align-items: center;
+        }
+        }
+    }
+}
+
+#chose{
+    padding-top: 50px;
+    padding-bottom: 30px;
+    .chose-h1{
+        text-align: center;
+        font-size: 38px;
+    }
+    .chose-cards{
+        @include flex2();
+  padding-top: 40px;
+  @media (max-width:1260px) {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+    @media (max-width:608px) {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+.chose-card{
+    padding-top: 49px;
+    margin-left: auto;
+    margin-right: auto;
+    img{
+        width: 70px;
+        padding-bottom: 10px;
+    }
+    h4{
+        font-size: 25px;
+        padding-bottom: 10px;
+    }
+}
+    }
+}
+
+#travel{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    .travel-h1{
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .travel-cards{
+        @include flex1();
+        padding-bottom: 20px;
+        @media (max-width:1388px) {
+            @include flex1();
+        }
+                @media (max-width:768px) {
+            @include flex6();
+        }
+        @media (max-width:590px) {
+            @include flex5();
+        }
+        .travel-card{
+            padding-top: 40px;
+            padding-bottom: 30px;
+img{
+          @media (max-width:1388px) {
+           max-width: 300px;
+           width: 100%;
+        }
+              @media (max-width:590px) {
+   max-width: 500px;
+        }
+}
+
+        p{
+            font-size: 20px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+        h3{
+            font-size: 20px;
+        }
+        }
+    }
+}
+
+#footer{
+    .container{
+         padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: blue;
+    color: white;
+    .foter-flex1{
+        @include flex();
+        padding-bottom: 90px;
+    }
+    .foter-ota{
+        @include flex();
+        @media (max-width:860px) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .foter-bola{
+            padding: 20px;
+            h3{
+                    padding-bottom: 20px;
+                    text-align: center;
+                    align-items: center;
+            }
+
+         p{
+            padding: 20px;
+            font-size: 20px;
+         }
+
+         button{
+padding: 10px;
+background-color: white;
+border: none;
+border-radius: 20px;
+         }
+        }
+    }
     }
 }
